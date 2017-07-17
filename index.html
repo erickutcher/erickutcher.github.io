@@ -2,8 +2,33 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Eric's project page.</title>
+		<title>Eric's Project Page</title>
 		<link rel="stylesheet" href="styles.css">
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-30445640-7', 'auto');
+			ga('send', 'pageview');
+		</script>
+		<script>
+		function show_hide( el, id )
+		{
+			var el2 = document.getElementById( id );
+			if ( el2.style.display === 'none' )
+			{
+				el.innerHTML = "Less Info &#x25B4;";
+				el2.style.display = 'block';
+			}
+			else
+			{
+				el.innerHTML = "More Info &#x25BE;";
+				el2.style.display = 'none';
+			}
+		}
+		</script>
 	</head>
 	<body>
 		<header>
@@ -23,43 +48,102 @@
 					<p class="button"><a class="button" href="https://github.com/erickutcher/vzenhanced56k/releases/download/v1.0.0.0/VZ_Enhanced_56K.zip">Download VZ Enhanced 56K</a></p>
 					<p>Version 1.0.0.0<br />Released on 7/15/2017</p>
 					<p><a href="https://github.com/erickutcher/vzenhanced56k">View project on GitHub</a></p>
+					<p><a onclick="show_hide( this, 'vzenhanced56k' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
 				</div>
 				<div class="screenshot">
 					<p><img class="screenshot" src="https://sites.google.com/site/erickutcher/vz_enhanced_56k.png"></p>
 				</div>
 			</div>
+
+			<div id="vzenhanced56k" style="display: none;">
+				<p>Incoming calls will appear in the <b>Call Log</b> and will be displayed in a specific color depending on any action that was taken against them. Normal calls will appear with black text, and ignored calls will appear with red text.</p>
+
+				<p>When you have an incoming call, you can right click the entry in the <b>Call Log</b> and choose to ignore the incoming call. If you ignore the call, then you will be disconnected from the caller and your phone will stop ringing.</p>
+
+				<p>Of course you don't have to manually do any of this. VZ Enhanced 56K has two supplementary lists that can automate the process of ignoring incoming calls. This is a great way to fight back against annoying telemarketers. Select the <b>Ignore Lists</b> tab from the main window to access these features. Right click a list to add an entry. The ignore phone number list will prompt you for a phone number to automatically ignore whenever that number calls. You can ignore an incoming phone number based on the caller ID name as well. Select the ignore caller ID name list to add entries.</p>
+
+				<p>If you would like to ignore a range of phone numbers (up to 15 digits), you can specify a wildcard value '*' in replace of a digit. For example, suppose you want to ignore a 10-digit phone number with an area code of 555. In the ignore text box you would type the following: 555******* This represents a range from (555) 000-0000 to (555) 999-9999. In total, 10 million numbers will be blocked by using this example. Pretty cool, huh?</p>
+
+				<p>Now here's something even cooler. The following four entries will block all invalid 10-digit US phone numbers. These particular phone numbers are guaranteed to be fake and can be outright ignored without consequence.<br />0*********<br />1*********<br />***0******<br />***1******<br />These four entries will block 3.6 billion potential telemarketers.</p>
+
+				<p>It should be noted that the phone number lists have precedence over the caller ID name lists.</p>
+
+				<p>VZ Enhanced 56K has various options to configure the behavior of the program. The options can be accessed from <b>Tools</b> > <b>Options...</b> The first tab that appears is the <b>General</b> tab. In it you can choose to display the System Tray icon which will generally appear on the lower right corner of the taskbar (next to the clock). The program can be set to minimum to the System Tray instead of to the taskbar and close to the System Tray instead of exiting the program. The <b>Silent startup</b> option causes the program to be hidden in the System Tray when it's loaded. This way you don't have to hide or minimize the program while it logs in. <b>Always on top</b> will cause all the program's windows to appear on top of every other program's windows. <b>Enable Call Log history</b> will save the entries in the <b>Call Log</b> so that they can be loaded the next time the program starts. If left unchecked, then any <b>Call Log</b> history will be lost. Finally, the <b>Log events to Message Log</b> will log various events such as connection attempts and list modifications to the <b>Message Log</b>. You can access the <b>Message Log</b> by clicking the <b>View</b> > <b>Message Log</b> menu.</p>
+
+				<p>The <b>Connection</b> tab handles connection related settings. <b>Reconnect upon connection loss</b> determine how many reconnect attempts are made to establish a connection. You may want to set this to a large value if you're on a flaky wireless connection. The <b>Timeout</b> setting determines how long (in seconds) a connection will attempt to connect before it fails. As with the reconnection attempts, you may want to set this to a large value if you're on a flaky wireless connection. The <b>SSL / TLS version</b> is used to change the encryption protocol version. It should be left as TLS 1.0. Finally, you can <b>Check for updates upon startup</b> to see if there's any updates for VZ Enhanced 56K.</p>
+
+				<p>The <b>Modem</b> tab handles modem related settings. If a modem is found on the system, it'll be listed in the <b>Default modem</b> dropdown list. If the modem supports voice communication, then you'll be able to select <b>Play recording when call is answered</b>. To allow the program to load recording files, create a folder called <b>recordings</b> in the same directory as <b>VZ_Enhanced_56K.exe</b>. Recordings should be <b>8 bit</b> or <b>16 bit</b> <b>.wav</b> files with a frequency of <b>8000 Hz</b>. The recording can be repeated up to 10 times, although you should keep the total length (including repeats) to 30 seconds or less. Finally, the <b>Drop answered calls</b> settings will drop the answered call after the selected amount of seconds. It is recommended to keep this set to 4 or more seconds so that the call has time to drop properly after it's been answered.</p>
+
+				<p>The <b>Popup</b> tab will allow you to <b>Enable popup windows</b> and configure their appearance. You can change the popup's width, height, position, transparency, how long it's displayed for, whether it has a border, displays a contact picture, and if it should have a ringtone played. To allow the program to load ringtone files, create a folder called <b>ringtones</b> in the same directory as <b>VZ_Enhanced_56K.exe</b>, and copy to it any <b>.wav</b>, <b>.mp3</b>, or <b>.mid</b> audio file. Per-contact ringtones can be set when adding or editing contacts in the <b>Contact List</b>. The other popup options allow you to change the order of the text that's displayed, their font attributes and the popup window's background color. You can preview the popup by clicking the <b>Preview Popup</b> button.</p>
+			</div>
+
 			<br />
 
 			<h2>HTTP Downloader</h2>
 
-			<p>HTTP Downloader is a download manager for the HTTP(S) protocol. Maximize your download throughput by utilizing high performance input/output completion ports. HTTP Downloader can open thousands of connections at a time and consumes very little system resources.</p>
+			<p>HTTP Downloader is a download manager for the HTTP(S) protocol. Maximize your download throughput by utilizing high performance input/output completion ports (IOCP). HTTP Downloader can open thousands of connections at a time and consumes very little system resources.</p>
 
 			<div class="info">
 				<div class="links">
-					<p class="button"><a class="button" href="https://github.com/erickutcher/httpdownloader/releases/download/v1.0.0.0/HTTP_Downloader.zip">Download HTTP Downloader</a></p>
-					<p>Version 1.0.0.0<br />Released on 7/15/2017</p>
+					<p class="button"><a class="button" href="https://github.com/erickutcher/httpdownloader/releases/download/v1.0.0.1/HTTP_Downloader.zip">Download HTTP Downloader</a></p>
+					<p>Version 1.0.0.1<br />Released on 7/16/2017</p>
 					<p><a href="https://github.com/erickutcher/httpdownloader">View project on GitHub</a></p>
+					<p><a onclick="show_hide( this, 'httpdownloader' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
 				</div>
 				<div class="screenshot">
 					<p><img class="screenshot" src="https://sites.google.com/site/erickutcher/http_downloader.png"></p>
 				</div>
 			</div>
+
+			<div id="httpdownloader" style="display: none;">
+				<p>HTTP Downloader is a high-performance, multi-part download manager. You can Start, Pause, Stop, and Queue up to 100 downloads at a time. Each download can be split into 100 parts. That's 10,000 connections!</p>
+
+				<p>Drag and drop links into the program's main window or, select <b>File</b> > <b>Add URL(s)...</b> to bring up the <b>Add URL(s)</b> window. From here you can select the download location to save the files. The <b>Advanced</b> button allows you to configure the number of parts to split each download, the <b>SSL / TSL version</b> to use for HTTPS connections, authentication information (basic or digest), and any necessary cookies. Clicking the <b>Add</b> button will being the download(s).</p>
+
+				<p>HTTP Downloader has various options to configure the behavior of the program. The options can be accessed from <b>Tools</b> > <b>Options...</b> The first tab that appears is the <b>General</b> tab. In it you can choose to display the System Tray icon which will generally appear on the lower right corner of the taskbar (next to the clock). The program can be set to minimum to the System Tray instead of to the taskbar and close to the System Tray instead of exiting the program. <b>Always on top</b> will cause all the program's windows to appear on top of every other program's windows. <b>Enable download history</b> will save the entries in the main window so that they can be loaded the next time the program starts. If left unchecked, then any download history will be lost. <b>Enable quick file allocation</b> will quickly preallocate a file on the disk by not overwriting the file location with zeros. Windows, by default, will write zeros to a preallocated file as a security measure. This can be bypassed with <b>Administrator access</b>. The <b>Default download directory</b> sets the location in the <b>Add URL(s)</b> window. Finally, the <b>Thread pool count</b> is the number of threads the program will use to manage all the connections that it makes.</p>
+
+				<p>The <b>Download</b> tab lets you set how many downloads can be done at a time, how many parts to split each download, and how many times to retry failed and timed out downloads.</p>
+
+				<p>The <b>Proxy</b> tab lets you connect to both HTTP and HTTPS proxies. You can also set any authentication information (basic or digest) that the proxies require.</p>
+			</div>
+
 			<br />
 
 			<h2>HTTP Proxy</h2>
 
-			<p>HTTP Proxy is an HTTP(S) proxy that can relay HTTP(S) traffic. See all the traffic that goes through your web browsers or any other HTTP(S) based program. Uses high performance input/output completion ports to handle multiple connections.</p>
+			<p>HTTP Proxy is an HTTP(S) proxy that can relay HTTP(S) traffic. See all the traffic that goes through your web browsers or any other HTTP(S) based program. Uses high performance input/output completion ports (IOCP) to handle multiple connections.</p>
 
 			<div class="info">
 				<div class="links">
 					<p class="button"><a class="button" href="https://github.com/erickutcher/httpproxy/releases/download/v1.0.0.0/HTTP_Proxy.zip">Download HTTP Proxy</a></p>
 					<p>Version 1.0.0.0<br />Released on 7/15/2017</p>
 					<p><a href="https://github.com/erickutcher/httpproxy">View project on GitHub</a></p>
+					<p><a onclick="show_hide( this, 'httpproxy' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
 				</div>
 				<div class="screenshot">
 					<p><img class="screenshot" src="https://sites.google.com/site/erickutcher/http_proxy.png"></p>
 				</div>
 			</div>
+
+			<div id="httpproxy" style="display: none;">
+				<p>HTTP Proxy is a command-line executable.</p>
+
+				<p>The command-line prompts should be fairly easy to follow. If you saved a configuration file, you can load it to bypass all the configuration settings. Otherwise, you can save a configuration file after setting your preferred settings.</p>
+
+				<p>If you choose to <b>Enable SSL / TLS</b>, then the security certificate files that you select must be in the form of either a <a href="https://en.wikipedia.org/wiki/PKCS_12">PKCS #12</a> file, or a <a href="https://en.wikipedia.org/wiki/Public-key_cryptography">public and private key pair</a>. If the PKCS #12 file has a password associated with it, then you'll want to enter its password. Creating a security certificate is somewhat involved, but there are plenty of guides online. Do a Google search for "Create a self-signed certificate with OpenSSL" and it should explain things better than I could.</p>
+
+				<p>Here's a list of supported commands:
+					<ul>
+						<li><b>Ctrl</b> + <b>f</b> - Starts the server.</li>
+						<li><b>Ctrl</b> + <b>r</b> - Restarts the server.</li>
+						<li><b>Ctrl</b> + <b>e</b> - Shuts down the server.</li>
+						<li><b>Ctrl</b> + <b>q</b> - Shuts down the server and quits the program.</li>
+						<li><b>Ctrl</b> + <b>i</b> - Displays the server's current settings.</li>
+						<li><b>Ctrl</b> + <b>o</b> - Toggles output information. When "ON", the program will display the connections it makes.</li>
+					</ul>
+				</p>
+			</div>
+
 			<br />
 
 			<h2>MD5 Bruteforcer</h2>
@@ -71,11 +155,19 @@
 					<p class="button"><a class="button" href="https://github.com/erickutcher/md5bruteforcer/releases/download/v1.0.0.0/MD5_Bruteforcer.zip">Download MD5 Bruteforcer</a></p>
 					<p>Version 1.0.0.0<br />Released on 7/15/2017</p>
 					<p><a href="https://github.com/erickutcher/md5bruteforcer">View project on GitHub</a></p>
+					<p><a onclick="show_hide( this, 'md5bruteforcer' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
 				</div>
 				<div class="screenshot">
 					<p><img class="screenshot" src="https://sites.google.com/site/erickutcher/md5_bruteforcer.png"></p>
 				</div>
 			</div>
+
+			<div id="md5bruteforcer" style="display: none;">
+				<p>MD5 Bruteforcer is a command-line executable and requires a CUDA based graphics card with a Streaming Multiprocessor version of 13 (<b>sm_13</b>).</p>
+
+				<p>The command-line prompts should be fairly easy to follow. Supply the program with an MD5 hash value, the presumed length of the hash's input, a character set to use when generating inputs, whether or not to randomize the character set, and GPU temperature constraints.</p>
+			</div>			
+
 			<br />
 
 			<h2>Monitor Off</h2>
@@ -87,10 +179,15 @@
 					<p class="button"><a class="button" href="https://github.com/erickutcher/monitoroff/releases/download/v1.0.0.0/Monitor_Off.zip">Download Monitor Off</a></p>
 					<p>Version 1.0.0.0<br />Released on 7/15/2017</p>
 					<p><a href="https://github.com/erickutcher/monitoroff">View project on GitHub</a></p>
+					<p><a onclick="show_hide( this, 'monitoroff' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
 				</div>
 				<div class="screenshot">
 					<p><img class="screenshot" src="https://sites.google.com/site/erickutcher/monitor_off.png"></p>
 				</div>
+			</div>
+
+			<div id="monitoroff" style="display: none;">
+				<p>Monitor Off resides in the System Tray and you can turn the monitor off by <b>middle clicking</b> (pressing the mouse wheel) its icon, or by pressing <b>Ctrl</b> + <b>Shift</b> + <b>F4</b>.</p>
 			</div>
 		</section>
 		<footer>
