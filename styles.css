@@ -72,7 +72,7 @@ a.button
 	font-weight: bold;
 	color: #FFFFFF;
 	text-decoration: none;
-	text-shadow: rgba( 0, 0, 0, 0.4 ) 0 1px 0;
+	text-shadow: rgba( 0, 0, 0, 0.6 ) 0 1px 0;
 }
 
 a.button:hover
@@ -91,9 +91,44 @@ a.button:active
 	background: -webkit-linear-gradient( top, #0370EA 0%, #008DFD 100% );
 }
 
+a.donate
+{
+	margin: 0px;
+	padding: 12px;
+	border: 1px solid #C42B07;
+	border-radius: 4px;
+	background: #ED4D00;
+	background: linear-gradient( top, #ED4D00 0%, #DC3003 100% );
+	background: -moz-linear-gradient( top, #ED4D00 0%, #DC3003 100% );
+	background: -ms-linear-gradient( top, #ED4D00 0%, #DC3003 100% );
+	background: -o-linear-gradient( top, #ED4D00 0%, #DC3003 100% );
+	background: -webkit-gradient( linear, left top, left bottom, color-stop( 0%, #ED4D00 ), color-stop( 100%, #DC3003 ) );
+	background: -webkit-linear-gradient( top, #ED4D00 0%, #DC3003 100% );
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-shadow: rgba( 0, 0, 0, 0.6 ) 0 1px 0;
+}
+
+a.donate:hover
+{
+	background: #ED4D00;
+}
+
+a.donate:active
+{
+	background: #DC3003;
+	background: linear-gradient( top, #DC3003 0%, #ED4D00 100% );
+	background: -moz-linear-gradient( top, #DC3003 0%, #ED4D00 100% );
+	background: -ms-linear-gradient( top, #DC3003 0%, #ED4D00 100% );
+	background: -o-linear-gradient( top, #DC3003 0%, #ED4D00 100% );
+	background: -webkit-gradient( linear, left top, left bottom, color-stop( 0%, #DC3003 ), color-stop( 100%, #ED4D00 ) );
+	background: -webkit-linear-gradient( top, #DC3003 0%, #ED4D00 100% );
+}
+
 p.button
 {
-	padding-top: 12px;
+	margin-top: 12px;
 }
 
 img.screenshot
@@ -127,7 +162,6 @@ header
 	top: 30px;
 	width: 220px;
 	padding-right: 30px;
-	border: 0px;
 	border-image: linear-gradient( to bottom, rgb( 170, 170, 170 ), rgba( 0, 0, 0, 0 ) ) 1 100%;
 	-webkit-border-image: -webkit-gradient( linear, 0 0, 0 100%, from( rgb( 170, 170, 170 ) ), to( rgba( 0, 0, 0, 0 ) ) ) 1 100%;
 	-webkit-border-image: -webkit-linear-gradient( rgb( 170, 170, 170 ), rgba( 0, 0, 0, 0 ) ) 1 100%;

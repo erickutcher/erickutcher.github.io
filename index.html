@@ -16,29 +16,46 @@
 		<script>
 		function show_hide( el, id )
 		{
-			var el2 = document.getElementById( id );
-			if ( el2.style.display === 'none' )
+			if ( el != null )
 			{
-				el.innerHTML = "Less Info &#x25B4;";
-				el2.style.display = 'block';
-			}
-			else
-			{
-				el.innerHTML = "More Info &#x25BE;";
-				el2.style.display = 'none';
+				var el2 = document.getElementById( id );
+				if ( el2 != null )
+				{
+					if ( el2.style.display === 'none' )
+					{
+						el.innerHTML = "Less Info &#x25B4;";
+						el2.style.display = 'block';
+					}
+					else
+					{
+						el.innerHTML = "More Info &#x25BE;";
+						el2.style.display = 'none';
+					}
+				}
 			}
 		}
+
+		function jump()
+		{
+			var anchor = window.location.hash.replace( "#", "" ).replace( /_/g, "" ).toLowerCase();
+
+			show_hide( document.getElementById( anchor + "_a" ), anchor );
+		}
+
+		window.onhashchange = jump;
 		</script>
 	</head>
 	<body>
 		<header>
 			<p><a class="header" href="https://erickutcher.github.io/">Eric's Projects</a></p>
 			<br />
-			<p><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=B8KT7Z87ECW66&lc=US&item_name=Projects%20by%20Eric%20Kutcher&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"></a><br />Please consider making a donation.<br />Your support is greatly appreciated.</p>
+			<p><a class="donate" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=B8KT7Z87ECW66&lc=US&item_name=Projects%20by%20Eric%20Kutcher&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted">Make A Donation</a></p>
+			<p>Please consider making a donation.<br />Your support is greatly appreciated.</p>
 			<br />
 			<p><a href="https://github.com/erickutcher?tab=repositories">View projects on GitHub</a>
 		</header>
 		<section>
+			<a id="VZ_Enhanced_56K"></a>
 			<h2>VZ Enhanced 56K</h2>
 
 			<p>VZ Enhanced 56K is a caller ID notifier that can block phone calls through the use of a 56K modem. It can block incoming calls based on individual phone numbers, ranges of phone numbers, and even caller ID names.</p>
@@ -48,7 +65,7 @@
 					<p class="button"><a class="button" href="https://github.com/erickutcher/vzenhanced56k/releases/download/v1.0.0.0/VZ_Enhanced_56K.zip">Download VZ Enhanced 56K</a></p>
 					<p>Version 1.0.0.0<br />Released on 7/15/2017</p>
 					<p><a href="https://github.com/erickutcher/vzenhanced56k">View project on GitHub</a></p>
-					<p><a onclick="show_hide( this, 'vzenhanced56k' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
+					<p><a id="vzenhanced56k_a" onclick="show_hide( this, 'vzenhanced56k' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
 				</div>
 				<div class="screenshot">
 					<p><img class="screenshot" src="https://sites.google.com/site/erickutcher/vz_enhanced_56k.png"></p>
@@ -79,6 +96,7 @@
 
 			<br />
 
+			<a id="HTTP_Downloader"></a>
 			<h2>HTTP Downloader</h2>
 
 			<p>HTTP Downloader is a download manager for the HTTP(S) protocol. Maximize your download throughput by utilizing high performance input/output completion ports (IOCP). HTTP Downloader can open thousands of connections at a time and consumes very little system resources.</p>
@@ -88,7 +106,7 @@
 					<p class="button"><a class="button" href="https://github.com/erickutcher/httpdownloader/releases/download/v1.0.0.1/HTTP_Downloader.zip">Download HTTP Downloader</a></p>
 					<p>Version 1.0.0.1<br />Released on 7/16/2017</p>
 					<p><a href="https://github.com/erickutcher/httpdownloader">View project on GitHub</a></p>
-					<p><a onclick="show_hide( this, 'httpdownloader' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
+					<p><a id="httpdownloader_a" onclick="show_hide( this, 'httpdownloader' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
 				</div>
 				<div class="screenshot">
 					<p><img class="screenshot" src="https://sites.google.com/site/erickutcher/http_downloader.png"></p>
@@ -109,6 +127,7 @@
 
 			<br />
 
+			<a id="HTTP_Proxy"></a>
 			<h2>HTTP Proxy</h2>
 
 			<p>HTTP Proxy is an HTTP(S) proxy that can relay HTTP(S) traffic. See all the traffic that goes through your web browsers or any other HTTP(S) based program. Uses high performance input/output completion ports (IOCP) to handle multiple connections.</p>
@@ -118,7 +137,7 @@
 					<p class="button"><a class="button" href="https://github.com/erickutcher/httpproxy/releases/download/v1.0.0.0/HTTP_Proxy.zip">Download HTTP Proxy</a></p>
 					<p>Version 1.0.0.0<br />Released on 7/15/2017</p>
 					<p><a href="https://github.com/erickutcher/httpproxy">View project on GitHub</a></p>
-					<p><a onclick="show_hide( this, 'httpproxy' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
+					<p><a id="httpproxy_a" onclick="show_hide( this, 'httpproxy' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
 				</div>
 				<div class="screenshot">
 					<p><img class="screenshot" src="https://sites.google.com/site/erickutcher/http_proxy.png"></p>
@@ -146,6 +165,7 @@
 
 			<br />
 
+			<a id="MD5_Bruteforcer"></a>
 			<h2>MD5 Bruteforcer</h2>
 
 			<p>MD5 Bruteforcer is a CUDA based MD5 bruteforcer. Brute force millions of MD5 hash values per second with optimized MD5 algorithms.</p>
@@ -155,7 +175,7 @@
 					<p class="button"><a class="button" href="https://github.com/erickutcher/md5bruteforcer/releases/download/v1.0.0.0/MD5_Bruteforcer.zip">Download MD5 Bruteforcer</a></p>
 					<p>Version 1.0.0.0<br />Released on 7/15/2017</p>
 					<p><a href="https://github.com/erickutcher/md5bruteforcer">View project on GitHub</a></p>
-					<p><a onclick="show_hide( this, 'md5bruteforcer' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
+					<p><a id="md5bruteforcer_a" onclick="show_hide( this, 'md5bruteforcer' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
 				</div>
 				<div class="screenshot">
 					<p><img class="screenshot" src="https://sites.google.com/site/erickutcher/md5_bruteforcer.png"></p>
@@ -166,10 +186,11 @@
 				<p>MD5 Bruteforcer is a command-line executable and requires a CUDA based graphics card with a Streaming Multiprocessor version of 13 (<b>sm_13</b>).</p>
 
 				<p>The command-line prompts should be fairly easy to follow. Supply the program with an MD5 hash value, the presumed length of the hash's input, a character set to use when generating inputs, whether or not to randomize the character set, and GPU temperature constraints.</p>
-			</div>			
+			</div>
 
 			<br />
 
+			<a id="Monitor_Off"></a>
 			<h2>Monitor Off</h2>
 
 			<p>Monitor Off will turn off the computer's monitor. A simple system tray program that lets you turn the monitor off with a mouse click or keyboard shortcut.</p>
@@ -179,7 +200,7 @@
 					<p class="button"><a class="button" href="https://github.com/erickutcher/monitoroff/releases/download/v1.0.0.0/Monitor_Off.zip">Download Monitor Off</a></p>
 					<p>Version 1.0.0.0<br />Released on 7/15/2017</p>
 					<p><a href="https://github.com/erickutcher/monitoroff">View project on GitHub</a></p>
-					<p><a onclick="show_hide( this, 'monitoroff' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
+					<p><a id="monitoroff_a" onclick="show_hide( this, 'monitoroff' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
 				</div>
 				<div class="screenshot">
 					<p><img class="screenshot" src="https://sites.google.com/site/erickutcher/monitor_off.png"></p>
@@ -192,6 +213,7 @@
 
 			<br />
 
+			<a id="More_Projects"></a>
 			<h2>More Projects</h2>
 
 			<p><a href="https://thumbcacheviewer.github.io/">Thumbcache Viewer</a> - Extract thumbnail images from the thumbcache_*.db and iconcache_*.db database files found on Windows Vista, Windows 7, Windows 8, Windows 8.1, and Windows 10.</p>
