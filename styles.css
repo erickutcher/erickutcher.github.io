@@ -73,6 +73,7 @@ a.button
 	color: #FFFFFF;
 	text-decoration: none;
 	text-shadow: rgba( 0, 0, 0, 0.6 ) 0 1px 0;
+	white-space: nowrap;
 }
 
 a.button:hover
@@ -175,7 +176,7 @@ section
 {
 	position: relative;
 	left: 290px;
-	width: 800px;
+	width: 920px;
 	margin: 30px;
 }
 
@@ -187,7 +188,7 @@ footer
 	width: 220px;
 }
 
-@media screen and (max-width: 1159px)
+@media screen and (max-width: 1279px)
 {
 	header, footer
 	{
@@ -210,7 +211,7 @@ footer
 	}
 }
 
-@media screen and (max-height: 555px) and (min-width: 1160px)
+@media screen and (max-height: 555px) and (min-width: 1280px)
 {
 	footer
 	{
