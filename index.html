@@ -73,7 +73,7 @@
 
 			<div class="info">
 				<div class="links">
-					<p class="button"><a class="button" href="https://github.com/erickutcher/vzenhanced56k/releases/download/v1.0.0.0/VZ_Enhanced_56K.zip">Download VZ Enhanced 56K</a></p>
+					<p><a class="button" href="https://github.com/erickutcher/vzenhanced56k/releases/download/v1.0.0.0/VZ_Enhanced_56K.zip">Download VZ Enhanced 56K</a></p>
 					<p>Version 1.0.0.0<br />Released on 7/15/2017</p>
 					<p><a href="https://github.com/erickutcher/vzenhanced56k">View project on GitHub</a></p>
 					<p><a id="vzenhanced56k_a" onclick="show_hide( this, 'vzenhanced56k' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
@@ -114,8 +114,15 @@
 
 			<div class="info">
 				<div class="links">
-					<p class="button"><a class="button" href="https://github.com/erickutcher/httpdownloader/releases/download/v1.0.0.1/HTTP_Downloader.zip">Download HTTP Downloader</a></p>
-					<p>Version 1.0.0.1<br />Released on 7/16/2017</p>
+					<p><a class="button" href="https://github.com/erickutcher/httpdownloader/releases/download/v1.0.0.2/HTTP_Downloader.zip">Download HTTP Downloader</a></p>
+					<p>Version 1.0.0.2<br />Released on 11/20/2017</p>
+					<br />
+					<p><a class="button" href="https://github.com/erickutcher/httpdownloader/releases/download/FWE_v1.0.0.0/HTTP_Downloader_Firefox_WebExtension.xpi">Install Firefox WebExtension</a></p>
+					<p>Version 1.0.0.0<br />Released on 11/20/2017</p>
+					<br />
+					<p><a class="button" href="https://github.com/erickutcher/httpdownloader/releases/download/CE_v1.0.0.0/HTTP_Downloader_Chrome_Extension.zip">Download Chrome Extension</a></p>
+					<p>Version 1.0.0.0<br />Released on 11/20/2017</p>
+					<p>You will need to install the Chrome extension with <b>Developer mode</b> turned on.</p>
 					<p><a href="https://github.com/erickutcher/httpdownloader">View project on GitHub</a></p>
 					<p><a id="httpdownloader_a" onclick="show_hide( this, 'httpdownloader' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
 				</div>
@@ -127,11 +134,11 @@
 			<div id="httpdownloader" style="display: none;">
 				<p>HTTP Downloader is a high-performance, multi-part download manager. You can Start, Pause, Stop, and Queue up to 100 downloads at a time. Each download can be split into 100 parts. That's 10,000 connections!</p>
 
-				<p>Drag and drop links into the program's main window or, select <b>File</b> > <b>Add URL(s)...</b> to bring up the <b>Add URL(s)</b> window. From here you can select the download location to save the files. The <b>Advanced</b> button allows you to configure the number of parts to split each download, the <b>SSL / TSL version</b> to use for HTTPS connections, authentication information (basic or digest), and any necessary cookies. Clicking the <b>Add</b> button will being the download(s).</p>
+				<p>Drag and drop links into the program's main window or, select <b>File</b> > <b>Add URL(s)...</b> to bring up the <b>Add URL(s)</b> window. From here you can select the download location to save the files. The <b>Advanced</b> button allows you to configure the number of parts to split each download, the <b>SSL / TSL version</b> to use for HTTPS connections, authentication information (basic or digest), and any necessary cookies. Clicking the <b>Download</b> button will begin the download(s).</p>
 
 				<p>HTTP Downloader has various options to configure the behavior of the program. The options can be accessed from <b>Tools</b> > <b>Options...</b> The first tab that appears is the <b>General</b> tab. In it you can choose to display the System Tray icon which will generally appear on the lower right corner of the taskbar (next to the clock). The program can be set to minimum to the System Tray instead of to the taskbar and close to the System Tray instead of exiting the program. <b>Always on top</b> will cause all the program's windows to appear on top of every other program's windows. <b>Enable download history</b> will save the entries in the main window so that they can be loaded the next time the program starts. If left unchecked, then any download history will be lost. <b>Enable quick file allocation</b> will quickly preallocate a file on the disk by not overwriting the file location with zeros. Windows, by default, will write zeros to a preallocated file as a security measure. This can be bypassed with <b>Administrator access</b>. The <b>Default download directory</b> sets the location in the <b>Add URL(s)</b> window. Finally, the <b>Thread pool count</b> is the number of threads the program will use to manage all the connections that it makes.</p>
 
-				<p>The <b>Download</b> tab lets you set how many downloads can be done at a time, how many parts to split each download, and how many times to retry failed and timed out downloads.</p>
+				<p>The <b>Connection</b> tab lets you set how many downloads can be done at a time, how many parts to split each download, and how many times to retry failed and timed out downloads. You can also enable a web server to allow remote connections to add URLs to download. The web server can ask for a username and password to authenticate a remote connection. It supports either <b>Basic</b> or <b>Digest</b> authentication. By checking <b>Enable SSL / TLS</b> you can load your security certificate files and choose the appropriate SSL / TLS version to allow for HTTPS connections. The security certificate files can be in the form of either a <a href="https://en.wikipedia.org/wiki/PKCS_12">PKCS #12</a> file, or a <a href="https://en.wikipedia.org/wiki/Public-key_cryptography">public and private key pair</a>. If the PKCS #12 file has a password associated with it, then you'll want to enter the password in the password text box. Creating a security certificate is somewhat involved, but there are plenty of guides online. Do a Google search for "Create a self-signed certificate with OpenSSL" and it should explain things better than I could.</p>
 
 				<p>The <b>Proxy</b> tab lets you connect to both HTTP and HTTPS proxies. You can also set any authentication information (basic or digest) that the proxies require.</p>
 			</div>
@@ -145,7 +152,7 @@
 
 			<div class="info">
 				<div class="links">
-					<p class="button"><a class="button" href="https://github.com/erickutcher/httpproxy/releases/download/v1.0.0.1/HTTP_Proxy.zip">Download HTTP Proxy</a></p>
+					<p><a class="button" href="https://github.com/erickutcher/httpproxy/releases/download/v1.0.0.1/HTTP_Proxy.zip">Download HTTP Proxy</a></p>
 					<p>Version 1.0.0.1<br />Released on 11/12/2017</p>
 					<p><a href="https://github.com/erickutcher/httpproxy">View project on GitHub</a></p>
 					<p><a id="httpproxy_a" onclick="show_hide( this, 'httpproxy' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
@@ -162,16 +169,15 @@
 
 				<p>If you choose to <b>Enable SSL / TLS</b>, then the security certificate files that you select must be in the form of either a <a href="https://en.wikipedia.org/wiki/PKCS_12">PKCS #12</a> file, or a <a href="https://en.wikipedia.org/wiki/Public-key_cryptography">public and private key pair</a>. If the PKCS #12 file has a password associated with it, then you'll want to enter its password. Creating a security certificate is somewhat involved, but there are plenty of guides online. Do a Google search for "Create a self-signed certificate with OpenSSL" and it should explain things better than I could.</p>
 
-				<p>Here's a list of supported commands:
-					<ul>
-						<li><b>Ctrl</b> + <b>f</b> - Starts the server.</li>
-						<li><b>Ctrl</b> + <b>r</b> - Restarts the server.</li>
-						<li><b>Ctrl</b> + <b>e</b> - Shuts down the server.</li>
-						<li><b>Ctrl</b> + <b>q</b> - Shuts down the server and quits the program.</li>
-						<li><b>Ctrl</b> + <b>i</b> - Displays the server's current settings.</li>
-						<li><b>Ctrl</b> + <b>o</b> - Toggles output information. When "ON", the program will display the connections it makes.</li>
-					</ul>
-				</p>
+				<p>Here's a list of supported commands:</p>
+				<ul>
+					<li><b>Ctrl</b> + <b>f</b> - Starts the server.</li>
+					<li><b>Ctrl</b> + <b>r</b> - Restarts the server.</li>
+					<li><b>Ctrl</b> + <b>e</b> - Shuts down the server.</li>
+					<li><b>Ctrl</b> + <b>q</b> - Shuts down the server and quits the program.</li>
+					<li><b>Ctrl</b> + <b>i</b> - Displays the server's current settings.</li>
+					<li><b>Ctrl</b> + <b>o</b> - Toggles output information. When "ON", the program will display the connections it makes.</li>
+				</ul>
 			</div>
 
 			<br />
@@ -183,7 +189,7 @@
 
 			<div class="info">
 				<div class="links">
-					<p class="button"><a class="button" href="https://github.com/erickutcher/md5bruteforcer/releases/download/v1.0.0.0/MD5_Bruteforcer.zip">Download MD5 Bruteforcer</a></p>
+					<p><a class="button" href="https://github.com/erickutcher/md5bruteforcer/releases/download/v1.0.0.0/MD5_Bruteforcer.zip">Download MD5 Bruteforcer</a></p>
 					<p>Version 1.0.0.0<br />Released on 7/15/2017</p>
 					<p><a href="https://github.com/erickutcher/md5bruteforcer">View project on GitHub</a></p>
 					<p><a id="md5bruteforcer_a" onclick="show_hide( this, 'md5bruteforcer' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
@@ -208,7 +214,7 @@
 
 			<div class="info">
 				<div class="links">
-					<p class="button"><a class="button" href="https://github.com/erickutcher/monitoroff/releases/download/v1.0.0.0/Monitor_Off.zip">Download Monitor Off</a></p>
+					<p><a class="button" href="https://github.com/erickutcher/monitoroff/releases/download/v1.0.0.0/Monitor_Off.zip">Download Monitor Off</a></p>
 					<p>Version 1.0.0.0<br />Released on 7/15/2017</p>
 					<p><a href="https://github.com/erickutcher/monitoroff">View project on GitHub</a></p>
 					<p><a id="monitoroff_a" onclick="show_hide( this, 'monitoroff' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
@@ -231,7 +237,7 @@
 
 			<div class="info">
 				<div class="links">
-					<p class="button"><a class="button" href="https://github.com/erickutcher/googlesearchresultsfilter/releases/download/v1.0.0.0/Google_Search_Results_Filter.xpi">Install Google Search Results Filter</a></p>
+					<p><a class="button" href="https://github.com/erickutcher/googlesearchresultsfilter/releases/download/v1.0.0.0/Google_Search_Results_Filter.xpi">Install Google Search Results Filter</a></p>
 					<p>Version 1.0.0.0<br />Released on 11/15/2017</p>
 					<p><a href="https://github.com/erickutcher/googlesearchresultsfilter">View project on GitHub</a></p>
 					<p><a id="googlesearchresultsfilter_a" onclick="show_hide( this, 'googlesearchresultsfilter' );" style="cursor: pointer;">More Info &#x25BE;</a></p>

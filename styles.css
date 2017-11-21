@@ -127,11 +127,6 @@ a.donate:active
 	background: -webkit-linear-gradient( top, #DC3003 0%, #ED4D00 100% );
 }
 
-p.button
-{
-	margin-top: 12px;
-}
-
 img.screenshot
 {
 	max-width: 100%;
@@ -149,6 +144,7 @@ div.links
 	display: table-cell;
 	width: 280px;
 	vertical-align: top;
+	padding-top: 12px;
 }
 
 div.screenshot
