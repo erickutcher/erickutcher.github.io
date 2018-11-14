@@ -152,6 +152,11 @@ div.screenshot
 	display: table-cell;
 }
 
+li
+{
+	margin: 0px;
+}
+
 header
 {
 	position: fixed;
