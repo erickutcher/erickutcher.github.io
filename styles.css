@@ -162,7 +162,7 @@ header
 	position: fixed;
 	left: 30px;
 	top: 30px;
-	width: 220px;
+	min-width: 220px;
 	padding-right: 30px;
 	border-image: linear-gradient( to bottom, rgb( 170, 170, 170 ), rgba( 0, 0, 0, 0 ) ) 1 100%;
 	-webkit-border-image: -webkit-gradient( linear, 0 0, 0 100%, from( rgb( 170, 170, 170 ) ), to( rgba( 0, 0, 0, 0 ) ) ) 1 100%;
