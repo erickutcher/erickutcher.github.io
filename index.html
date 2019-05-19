@@ -73,8 +73,10 @@
 
 			<div class="info">
 				<div class="links">
-					<p><a class="button" href="https://github.com/erickutcher/vzenhanced56k/releases/download/v1.0.0.5/VZ_Enhanced_56K.zip">Download VZ Enhanced 56K</a></p>
-					<p>Version 1.0.0.5<br />Released on 11/4/2018</p>
+					<p><a class="button" href="https://github.com/erickutcher/vzenhanced56k/releases/download/v1.0.0.6/VZ_Enhanced_56K_32.zip">Download VZ Enhanced 56K 32-bit</a></p>
+					<br />
+					<p><a class="button" href="https://github.com/erickutcher/vzenhanced56k/releases/download/v1.0.0.6/VZ_Enhanced_56K_64.zip">Download VZ Enhanced 56K 64-bit</a></p>
+					<p>Version 1.0.0.6<br />Released on 5/19/2019</p>
 					<p><a href="https://github.com/erickutcher/vzenhanced56k">View project on GitHub</a></p>
 					<p><a id="vzenhanced56k_a" onclick="show_hide( this, 'vzenhanced56k' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
 				</div>
@@ -88,17 +90,17 @@
 
 				<p>When you have an incoming call, you can right click the entry in the <b>Call Log</b> and choose to ignore the incoming call. If you ignore the call, then you will be disconnected from the caller and your phone will stop ringing.</p>
 
-				<p>Of course you don't have to manually do any of this. VZ Enhanced 56K has two supplementary lists that can automate the process of ignoring incoming calls. This is a great way to fight back against annoying telemarketers. Select the <b>Ignore Lists</b> tab from the main window to access these features. Right click a list to add an entry. The ignore phone number list will prompt you for a phone number to automatically ignore whenever that number calls. You can ignore an incoming phone number based on the caller ID name as well. Select the ignore caller ID name list to add entries.</p>
+				<p>Of course you don't have to manually do any of this. VZ Enhanced 56K has two supplementary lists that can automate the process of ignoring incoming calls. This is a great way to fight back against annoying telemarketers. Select the <b>Ignore Lists</b> tab from the main window to access these features. Right click a list to add an entry. The ignore phone number list will prompt you for a phone number to automatically ignore whenever that number calls. You can ignore an incoming phone number based on the caller ID name as well. Select the ignore caller ID name list to add entries. Caller ID names can be ignored using regular expressions.</p>
 
 				<p>If you would like to ignore a range of phone numbers (up to 15 digits), you can specify a wildcard value '*' in replace of a digit. For example, suppose you want to ignore a 10-digit phone number with an area code of 555. In the ignore text box you would type the following: 555******* This represents a range from (555) 000-0000 to (555) 999-9999. In total, 10 million numbers will be blocked by using this example. Pretty cool, huh?</p>
 
 				<p>Now here's something even cooler. The following four entries will block all invalid 10-digit US phone numbers. These particular phone numbers are guaranteed to be fake and can be outright ignored without consequence.<br />0*********<br />1*********<br />***0******<br />***1******<br />These four entries will block 3.6 billion potential telemarketers.</p>
 
+				<p>The <b>Allow Lists</b> work similarly to the <b>Ignore Lists</b>, but they allow calls to come through. The <b>Allow Lists</b> have precedence over the <b>Ignore Lists</b>. Knowing this, you can turn the program into a whitelist blocker instead of a blacklist blocker.</p>
+
 				<p>It should be noted that the phone number lists have precedence over the caller ID name lists.</p>
 
 				<p>VZ Enhanced 56K has various options to configure the behavior of the program. The options can be accessed from <b>Tools</b> > <b>Options...</b> The first tab that appears is the <b>General</b> tab. In it you can choose to display the System Tray icon which will generally appear on the lower right corner of the taskbar (next to the clock). The program can be set to minimum to the System Tray instead of to the taskbar and close to the System Tray instead of exiting the program. The <b>Silent startup</b> option causes the program to be hidden in the System Tray when it's loaded. This way you don't have to hide or minimize the program while it logs in. <b>Always on top</b> will cause all the program's windows to appear on top of every other program's windows. <b>Enable Call Log history</b> will save the entries in the <b>Call Log</b> so that they can be loaded the next time the program starts. If left unchecked, then any <b>Call Log</b> history will be lost. Finally, the <b>Log events to Message Log</b> will log various events such as connection attempts and list modifications to the <b>Message Log</b>. You can access the <b>Message Log</b> by clicking the <b>View</b> > <b>Message Log</b> menu.</p>
-
-				<p>The <b>Connection</b> tab handles connection related settings. <b>Reconnect upon connection loss</b> determine how many reconnect attempts are made to establish a connection. You may want to set this to a large value if you're on a flaky wireless connection. The <b>Timeout</b> setting determines how long (in seconds) a connection will attempt to connect before it fails. As with the reconnection attempts, you may want to set this to a large value if you're on a flaky wireless connection. The <b>SSL / TLS version</b> is used to change the encryption protocol version. It should be left as TLS 1.0. Finally, you can <b>Check for updates upon startup</b> to see if there's any updates for VZ Enhanced 56K.</p>
 
 				<p>The <b>Modem</b> tab handles modem related settings. If a modem is found on the system, it'll be listed in the <b>Default modem</b> dropdown list. If the modem supports voice communication, then you'll be able to select <b>Play recording when call is answered</b>. To allow the program to load recording files, create a folder called <b>recordings</b> in the same directory as <b>VZ_Enhanced_56K.exe</b>. Recordings should be <b>8 bit</b> or <b>16 bit</b> <b>.wav</b> files with a frequency of <b>8000 Hz</b>. The recording can be repeated up to 10 times, although you should keep the total length (including repeats) to 30 seconds or less. Finally, the <b>Drop answered calls</b> settings will drop the answered call after the selected amount of seconds. It is recommended to keep this set to 4 or more seconds so that the call has time to drop properly after it's been answered.</p>
 
