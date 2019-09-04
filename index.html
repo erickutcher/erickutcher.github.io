@@ -112,20 +112,20 @@
 			<a id="HTTP_Downloader"></a>
 			<h2>HTTP Downloader</h2>
 
-			<p>HTTP Downloader is a download manager for the HTTP(S) protocol. Maximize your download throughput by utilizing high performance input/output completion ports (IOCP). HTTP Downloader can open thousands of connections at a time and consumes very little system resources.</p>
+			<p>HTTP Downloader is a download manager for the HTTP(S) and FTP(S) protocols. Maximize your download throughput by utilizing high performance input/output completion ports (IOCP). HTTP Downloader can open thousands of connections at a time and consumes very little system resources.</p>
 
 			<div class="info">
 				<div class="links">
-					<p><a class="button" href="https://github.com/erickutcher/httpdownloader/releases/download/v1.0.2.6/HTTP_Downloader_32.zip">Download HTTP Downloader 32-bit</a></p>
+					<p><a class="button" href="https://github.com/erickutcher/httpdownloader/releases/download/v1.0.2.7/HTTP_Downloader_32.zip">Download HTTP Downloader 32-bit</a></p>
 					<br />
-					<p><a class="button" href="https://github.com/erickutcher/httpdownloader/releases/download/v1.0.2.6/HTTP_Downloader_64.zip">Download HTTP Downloader 64-bit</a></p>
-					<p>Version 1.0.2.6<br />Released on 7/25/2019</p>
+					<p><a class="button" href="https://github.com/erickutcher/httpdownloader/releases/download/v1.0.2.7/HTTP_Downloader_64.zip">Download HTTP Downloader 64-bit</a></p>
+					<p>Version 1.0.2.7<br />Released on 9/3/2019</p>
 					<br />
-					<p><a class="button" href="https://github.com/erickutcher/httpdownloader/releases/download/FWE_v1.0.0.9/HTTP_Downloader_Firefox_WebExtension.xpi">Install Firefox WebExtension</a></p>
-					<p>Version 1.0.0.9<br />Released on 6/23/2019</p>
+					<p><a class="button" href="https://github.com/erickutcher/httpdownloader/releases/download/FWE_v1.0.1.0/HTTP_Downloader_Firefox_WebExtension.xpi">Install Firefox WebExtension</a></p>
+					<p>Version 1.0.1.0<br />Released on 9/3/2019</p>
 					<br />
-					<p><a class="button" href="https://github.com/erickutcher/httpdownloader/releases/download/CE_v1.0.0.9/HTTP_Downloader_Chrome_Extension.crx">Download Chrome Extension</a></p>
-					<p>Version 1.0.0.9<br />Released on 6/23/2019</p>
+					<p><a class="button" href="https://github.com/erickutcher/httpdownloader/releases/download/CE_v1.0.1.0/HTTP_Downloader_Chrome_Extension.crx">Download Chrome Extension</a></p>
+					<p>Version 1.0.1.0<br />Released on 9/3/2019</p>
 					<p><a href="https://github.com/erickutcher/httpdownloader">View project on GitHub</a></p>
 					<p><a id="httpdownloader_a" onclick="show_hide( this, 'httpdownloader' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
 				</div>
@@ -147,7 +147,7 @@
 
 				<p>The main window shows a listing of downloads and a status bar. You can enable or disable the status bar as well as a toolbar from the <b>View</b> menu. You can change the units of measurement (bytes, kilobytes, etc.) for the status bar by clicking on the status bar panels. The same can be done with the <b>Downloaded</b>, <b>File Size</b>, and <b>Download Speed</b> columns by holding Ctrl and clicking on their respective column headers. The first measurement state is set to auto adjust when the number increases. The other four states will display only bytes, kilobytes, megabytes, and gigabytes respectively. Each column can be dragged into a new position and if you'd like to show or hide any, then right click on any of the column headers to bring up their menu.</p>
 
-				<p>The following is a list of command-line switches:<br /><ul><li><b>--base-directory [path]</b> - The directory where the program's settings and history are saved.</li><li><b>--portable</b> - Run the program in portable mode and saves its settings and history to the same directory as its executable. You can optionally create an extensionless file named "<b>portable</b>" in the same directory as the executable.</li><li><b>--url</b> - A URL to download.</li><li><b>--output-directory [path]</b> - The directory in which to save the downloads.</li><li><b>--parts [1-100]</b> - Sets the number of parts in which a download will be split.</li><li><b>--encryption [0-4]</b> - Sets the encryption that will be used when making a secure connection. 0 = SSL 2.0, 1 = SSL 3.0, 2 = TLS 1.0, 3 = TLS 1.1, 4 = TLS 1.2</li><li><b>--username</b> - The username for a request that requires authentication.</li><li><b>--password</b> - The password for a request that requires authentication.</li><li><b>--cookie-string</b> - Include a cookie string with the connection request.</li><li><b>--header-field</b> - Include a header field (name and value) with the connection request.</li><li><b>--post-data</b> - Include POST data (URL encoded) with the request. The request will be made as a POST request instead of a GET request.</li><li><b>--simulate</b> - Download URL(s) without saving them to the disk.</li><li><b>--immediate</b> - Begin downloading the URL(s) without showing the Add URL(s) window.</li><li><b>--url-list [path]</b> - A text file with a list of URL(s) to download.</li><li><b>--download-history [path]</b> - Import an HTTP Downloader history file.</li></ul></p>
+				<p>The following is a list of command-line switches:<br /><ul><li><b>--base-directory [path]</b> - The directory where the program's settings and history are saved.</li><li><b>--portable</b> - Run the program in portable mode and saves its settings and history to the same directory as its executable. You can optionally create an extensionless file named "<b>portable</b>" in the same directory as the executable.</li><li><b>--url</b> - A URL to download.</li><li><b>--output-directory [path]</b> - The directory in which to save the downloads.</li><li><b>--parts [1-100]</b> - Sets the number of parts in which a download will be split.</li><li><b>--encryption [0-4]</b> - Sets the encryption that will be used when making a secure connection. 0 = SSL 2.0, 1 = SSL 3.0, 2 = TLS 1.0, 3 = TLS 1.1, 4 = TLS 1.2</li><li><b>--username</b> - The username for a request that requires authentication.</li><li><b>--password</b> - The password for a request that requires authentication.</li><li><b>--cookie-string</b> - Include a cookie string with the connection request.</li><li><b>--header-field</b> - Include a header field (name and value) with the connection request.</li><li><b>--post-data</b> - Include POST data (URL encoded) with the request. The request will be made as a POST request instead of a GET request.</li><li><b>--simulate</b> - Download URL(s) without saving them to the disk.</li><li><b>--add-stopped</b> - Add the URL(s) in the stopped state without showing the Add URL(s) window.</li><li><b>--immediate</b> - Begin downloading the URL(s) without showing the Add URL(s) window.</li><li><b>--url-list [path]</b> - A text file with a list of URL(s) to download.</li><li><b>--download-history [path]</b> - Import an HTTP Downloader history file.</li></ul></p>
 
 				<p>The browser extensions above will allow your browser (Firefox or Chrome) to send HTTP Downloader URLs to download. You will need to enable the <b>web server</b> in the HTTP Downloader <b>Connection</b> options. The server address and port in the extension's options need to match those in the program's options. You can choose to have the extension download HTTP(S) URLs instead of the browser by selecting <b>Override browser's download manager</b> in the extension's options. Right clicking on a link, web page, or media file will allow you to access the HTTP Downloader context menu and various download options.</p>
 			</div>
@@ -257,7 +257,7 @@
 			</div>
 
 			<div id="googleauthenticator" style="display: none;">
-				<p>Google Authenticator stores its username and key list in an 256-bit AES encrypted file. A key file will be generated and used to encrypt and decrypt the list file. Do not lose it! You will need <b>2-Step Verification</b> enabled on your Google account and the base32 key that they generate for you to use with their Google Authenticator app.</p>
+				<p>Google Authenticator stores its username and key list in a 256-bit AES encrypted file. A key file will be generated and used to encrypt and decrypt the list file. Do not lose it! You will need <b>2-Step Verification</b> enabled on your Google account and the base32 key that they generate for you to use with their Google Authenticator app.</p>
 
 				<p><b>Add</b>, <b>edit</b>, and <b>remove</b> items from the list using the keyboard commands listed in the program. <b>Copy</b> the one-time password using <b>Ctrl</b> + <b>C</b>. You can scroll the list using the up and down arrow keys. If you'd like to load a list and its key file directly from the command-line, then include their paths after the executable name: Google_Authenticator.exe list.db list.key</p>
 			</div>
