@@ -141,20 +141,16 @@ img.screenshot
 
 div.info
 {
-	display: table-row;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 div.links
 {
-	display: table-cell;
 	width: 280px;
 	vertical-align: top;
 	padding-top: 12px;
-}
-
-div.screenshot
-{
-	display: table-cell;
 }
 
 li
