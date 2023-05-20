@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Eric's Project Page</title>
@@ -68,7 +68,7 @@
 	</head>
 	<body>
 		<header>
-			<p><a class="header" href="https://erickutcher.github.io/">Eric's Projects</a></p>
+			<h1><a class="header" href="https://erickutcher.github.io/">Eric's Projects</a></h1>
 			<br />
 			<p><a class="donate" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=B8KT7Z87ECW66&lc=US&item_name=Projects%20by%20Eric%20Kutcher&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted">Make A Donation</a></p>
 			<p>Please consider making a donation.<br />Your support is greatly appreciated.</p>
@@ -76,49 +76,6 @@
 			<p><a href="https://github.com/erickutcher?tab=repositories">View projects on GitHub</a>
 		</header>
 		<section>
-			<a id="VZ_Enhanced_56K"></a>
-			<h2>VZ Enhanced 56K</h2>
-
-			<p>VZ Enhanced 56K is a caller ID notifier that can block phone calls through the use of a 56K modem. It can block incoming calls based on individual phone numbers, ranges of phone numbers, and even caller ID names.</p>
-
-			<div class="info">
-				<div class="links">
-					<p><a class="button" href="https://github.com/erickutcher/vzenhanced56k/releases/download/v1.0.0.9/VZ_Enhanced_56K_32.zip">Download VZ Enhanced 56K 32-bit</a></p>
-					<br />
-					<p><a class="button" href="https://github.com/erickutcher/vzenhanced56k/releases/download/v1.0.0.9/VZ_Enhanced_56K_64.zip">Download VZ Enhanced 56K 64-bit</a></p>
-					<p>Version 1.0.0.9<br />Released on 7/4/2019</p>
-					<p><a href="https://github.com/erickutcher/vzenhanced56k">View project on GitHub</a></p>
-					<p><a id="vzenhanced56k_a" onclick="show_hide( this, 'vzenhanced56k' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
-				</div>
-				<div class="screenshot">
-					<p><img class="screenshot" alt="VZ Enhanced" src="images/vz_enhanced_56k.png"></p>
-				</div>
-			</div>
-
-			<div id="vzenhanced56k" style="display: none;">
-				<p>Incoming calls will appear in the <b>Call Log</b> and will be displayed in a specific color depending on any action that was taken against them. Normal calls will appear with black text, and ignored calls will appear with red text.</p>
-
-				<p>When you have an incoming call, you can right click the entry in the <b>Call Log</b> and choose to ignore the incoming call. If you ignore the call, then you will be disconnected from the caller and your phone will stop ringing.</p>
-
-				<p>Of course you don't have to manually do any of this. VZ Enhanced 56K has two supplementary lists that can automate the process of ignoring incoming calls. This is a great way to fight back against annoying telemarketers. Select the <b>Ignore Lists</b> tab from the main window to access these features. Right click a list to add an entry. The ignore phone number list will prompt you for a phone number to automatically ignore whenever that number calls. You can ignore an incoming phone number based on the caller ID name as well. Select the ignore caller ID name list to add entries. Caller ID names can be ignored using regular expressions.</p>
-
-				<p>If you would like to ignore a range of phone numbers (up to 15 digits), you can specify a wildcard value '*' in replace of a digit. For example, suppose you want to ignore a 10-digit phone number with an area code of 555. In the ignore text box you would type the following: 555******* This represents a range from (555) 000-0000 to (555) 999-9999. In total, 10 million numbers will be blocked by using this example. Pretty cool, huh?</p>
-
-				<p>Now here's something even cooler. The following four entries will block all invalid 10-digit US phone numbers. These particular phone numbers are guaranteed to be fake and can be outright ignored without consequence.<br />0*********<br />1*********<br />***0******<br />***1******<br />These four entries will block 3.6 billion potential telemarketers.</p>
-
-				<p>The <b>Allow Lists</b> work similarly to the <b>Ignore Lists</b>, but they allow calls to come through. The <b>Allow Lists</b> have precedence over the <b>Ignore Lists</b>. Knowing this, you can turn the program into a whitelist blocker instead of a blacklist blocker.</p>
-
-				<p>It should be noted that the phone number lists have precedence over the caller ID name lists.</p>
-
-				<p>VZ Enhanced 56K has various options to configure the behavior of the program. The options can be accessed from <b>Tools</b> > <b>Options...</b> The first tab that appears is the <b>General</b> tab. In it you can choose to display the System Tray icon which will generally appear on the lower right corner of the taskbar (next to the clock). The program can be set to minimum to the System Tray instead of to the taskbar and close to the System Tray instead of exiting the program. The <b>Silent startup</b> option causes the program to be hidden in the System Tray when it's loaded. This way you don't have to hide or minimize the program while it logs in. <b>Always on top</b> will cause all the program's windows to appear on top of every other program's windows. <b>Enable Call Log history</b> will save the entries in the <b>Call Log</b> so that they can be loaded the next time the program starts. If left unchecked, then any <b>Call Log</b> history will be lost. Finally, the <b>Log events to Message Log</b> will log various events such as connection attempts and list modifications to the <b>Message Log</b>. You can access the <b>Message Log</b> by clicking the <b>View</b> > <b>Message Log</b> menu.</p>
-
-				<p>The <b>Modem</b> tab handles modem related settings. If a modem is found on the system, it'll be listed in the <b>Default modem</b> dropdown list. If the modem supports voice communication, then you'll be able to select <b>Play recording when call is answered</b>. To allow the program to load recording files, create a folder called <b>recordings</b> in the same directory as <b>VZ_Enhanced_56K.exe</b>. Recordings should be <b>8 bit</b> or <b>16 bit</b> <b>.wav</b> files with a frequency of <b>8000 Hz</b>. The recording can be repeated up to 10 times, although you should keep the total length (including repeats) to 30 seconds or less. Finally, the <b>Drop answered calls</b> settings will drop the answered call after the selected amount of seconds. It is recommended to keep this set to 4 or more seconds so that the call has time to drop properly after it's been answered.</p>
-
-				<p>The <b>Popup</b> tab will allow you to <b>Enable popup windows</b> and configure their appearance. You can change the popup's width, height, position, transparency, how long it's displayed for, whether it has a border, displays a contact picture, and if it should have a ringtone played. To allow the program to load ringtone files, create a folder called <b>ringtones</b> in the same directory as <b>VZ_Enhanced_56K.exe</b>, and copy to it any <b>.wav</b>, <b>.mp3</b>, or <b>.mid</b> audio file. Per-contact ringtones can be set when adding or editing contacts in the <b>Contact List</b>. The other popup options allow you to change the order of the text that's displayed, their font attributes and the popup window's background color. You can preview the popup by clicking the <b>Preview Popup</b> button.</p>
-			</div>
-
-			<br />
-
 			<a id="HTTP_Downloader"></a>
 			<h2>HTTP Downloader</h2>
 
@@ -138,7 +95,7 @@
 					<p><a class="button" href="https://microsoftedge.microsoft.com/addons/detail/http-downloader/hfahlnincgclabgdmpkpdddnmbnjbicb">Get Edge Extension</a></p>
 					<p>Version 1.0.2.2<br />Released on 1/3/2022</p>
 					<p><a href="https://github.com/erickutcher/httpdownloader">View project on GitHub</a></p>
-					<p><a id="httpdownloader_a" onclick="show_hide( this, 'httpdownloader' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
+					<p><a href="javascript:void(0);" id="httpdownloader_a" onclick="show_hide( this, 'httpdownloader' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
 				</div>
 				<div class="screenshot">
 					<p><img class="screenshot" alt="HTTP Downloader" src="images/http_downloader.png"></p>
@@ -177,6 +134,49 @@
 
 			<br />
 
+			<a id="VZ_Enhanced_56K"></a>
+			<h2>VZ Enhanced 56K</h2>
+
+			<p>VZ Enhanced 56K is a caller ID notifier that can block phone calls through the use of a 56K modem. It can block incoming calls based on individual phone numbers, ranges of phone numbers, and even caller ID names.</p>
+
+			<div class="info">
+				<div class="links">
+					<p><a class="button" href="https://github.com/erickutcher/vzenhanced56k/releases/download/v1.0.0.9/VZ_Enhanced_56K_32.zip">Download VZ Enhanced 56K 32-bit</a></p>
+					<br />
+					<p><a class="button" href="https://github.com/erickutcher/vzenhanced56k/releases/download/v1.0.0.9/VZ_Enhanced_56K_64.zip">Download VZ Enhanced 56K 64-bit</a></p>
+					<p>Version 1.0.0.9<br />Released on 7/4/2019</p>
+					<p><a href="https://github.com/erickutcher/vzenhanced56k">View project on GitHub</a></p>
+					<p><a href="javascript:void(0);" id="vzenhanced56k_a" onclick="show_hide( this, 'vzenhanced56k' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
+				</div>
+				<div class="screenshot">
+					<p><img class="screenshot" alt="VZ Enhanced" src="images/vz_enhanced_56k.png"></p>
+				</div>
+			</div>
+
+			<div id="vzenhanced56k" style="display: none;">
+				<p>Incoming calls will appear in the <b>Call Log</b> and will be displayed in a specific color depending on any action that was taken against them. Normal calls will appear with black text, and ignored calls will appear with red text.</p>
+
+				<p>When you have an incoming call, you can right click the entry in the <b>Call Log</b> and choose to ignore the incoming call. If you ignore the call, then you will be disconnected from the caller and your phone will stop ringing.</p>
+
+				<p>Of course you don't have to manually do any of this. VZ Enhanced 56K has two supplementary lists that can automate the process of ignoring incoming calls. This is a great way to fight back against annoying telemarketers. Select the <b>Ignore Lists</b> tab from the main window to access these features. Right click a list to add an entry. The ignore phone number list will prompt you for a phone number to automatically ignore whenever that number calls. You can ignore an incoming phone number based on the caller ID name as well. Select the ignore caller ID name list to add entries. Caller ID names can be ignored using regular expressions.</p>
+
+				<p>If you would like to ignore a range of phone numbers (up to 15 digits), you can specify a wildcard value '*' in replace of a digit. For example, suppose you want to ignore a 10-digit phone number with an area code of 555. In the ignore text box you would type the following: 555******* This represents a range from (555) 000-0000 to (555) 999-9999. In total, 10 million numbers will be blocked by using this example. Pretty cool, huh?</p>
+
+				<p>Now here's something even cooler. The following four entries will block all invalid 10-digit US phone numbers. These particular phone numbers are guaranteed to be fake and can be outright ignored without consequence.<br />0*********<br />1*********<br />***0******<br />***1******<br />These four entries will block 3.6 billion potential telemarketers.</p>
+
+				<p>The <b>Allow Lists</b> work similarly to the <b>Ignore Lists</b>, but they allow calls to come through. The <b>Allow Lists</b> have precedence over the <b>Ignore Lists</b>. Knowing this, you can turn the program into a whitelist blocker instead of a blacklist blocker.</p>
+
+				<p>It should be noted that the phone number lists have precedence over the caller ID name lists.</p>
+
+				<p>VZ Enhanced 56K has various options to configure the behavior of the program. The options can be accessed from <b>Tools</b> > <b>Options...</b> The first tab that appears is the <b>General</b> tab. In it you can choose to display the System Tray icon which will generally appear on the lower right corner of the taskbar (next to the clock). The program can be set to minimum to the System Tray instead of to the taskbar and close to the System Tray instead of exiting the program. The <b>Silent startup</b> option causes the program to be hidden in the System Tray when it's loaded. This way you don't have to hide or minimize the program while it logs in. <b>Always on top</b> will cause all the program's windows to appear on top of every other program's windows. <b>Enable Call Log history</b> will save the entries in the <b>Call Log</b> so that they can be loaded the next time the program starts. If left unchecked, then any <b>Call Log</b> history will be lost. Finally, the <b>Log events to Message Log</b> will log various events such as connection attempts and list modifications to the <b>Message Log</b>. You can access the <b>Message Log</b> by clicking the <b>View</b> > <b>Message Log</b> menu.</p>
+
+				<p>The <b>Modem</b> tab handles modem related settings. If a modem is found on the system, it'll be listed in the <b>Default modem</b> dropdown list. If the modem supports voice communication, then you'll be able to select <b>Play recording when call is answered</b>. To allow the program to load recording files, create a folder called <b>recordings</b> in the same directory as <b>VZ_Enhanced_56K.exe</b>. Recordings should be <b>8 bit</b> or <b>16 bit</b> <b>.wav</b> files with a frequency of <b>8000 Hz</b>. The recording can be repeated up to 10 times, although you should keep the total length (including repeats) to 30 seconds or less. Finally, the <b>Drop answered calls</b> settings will drop the answered call after the selected amount of seconds. It is recommended to keep this set to 4 or more seconds so that the call has time to drop properly after it's been answered.</p>
+
+				<p>The <b>Popup</b> tab will allow you to <b>Enable popup windows</b> and configure their appearance. You can change the popup's width, height, position, transparency, how long it's displayed for, whether it has a border, displays a contact picture, and if it should have a ringtone played. To allow the program to load ringtone files, create a folder called <b>ringtones</b> in the same directory as <b>VZ_Enhanced_56K.exe</b>, and copy to it any <b>.wav</b>, <b>.mp3</b>, or <b>.mid</b> audio file. Per-contact ringtones can be set when adding or editing contacts in the <b>Contact List</b>. The other popup options allow you to change the order of the text that's displayed, their font attributes and the popup window's background color. You can preview the popup by clicking the <b>Preview Popup</b> button.</p>
+			</div>
+
+			<br />
+
 			<a id="HTTP_Proxy"></a>
 			<h2>HTTP Proxy</h2>
 
@@ -187,7 +187,7 @@
 					<p><a class="button" href="https://github.com/erickutcher/httpproxy/releases/download/v1.0.0.2/HTTP_Proxy.zip">Download HTTP Proxy</a></p>
 					<p>Version 1.0.0.2<br />Released on 10/29/2018</p>
 					<p><a href="https://github.com/erickutcher/httpproxy">View project on GitHub</a></p>
-					<p><a id="httpproxy_a" onclick="show_hide( this, 'httpproxy' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
+					<p><a href="javascript:void(0);" id="httpproxy_a" onclick="show_hide( this, 'httpproxy' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
 				</div>
 				<div class="screenshot">
 					<p><img class="screenshot" alt="HTTP Proxy" src="images/http_proxy.png"></p>
@@ -224,7 +224,7 @@
 					<p><a class="button" href="https://github.com/erickutcher/md5bruteforcer/releases/download/v1.0.0.0/MD5_Bruteforcer.zip">Download MD5 Bruteforcer</a></p>
 					<p>Version 1.0.0.0<br />Released on 7/15/2017</p>
 					<p><a href="https://github.com/erickutcher/md5bruteforcer">View project on GitHub</a></p>
-					<p><a id="md5bruteforcer_a" onclick="show_hide( this, 'md5bruteforcer' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
+					<p><a href="javascript:void(0);" id="md5bruteforcer_a" onclick="show_hide( this, 'md5bruteforcer' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
 				</div>
 				<div class="screenshot">
 					<p><img class="screenshot" alt="MD5 Bruteforcer" src="images/md5_bruteforcer.png"></p>
@@ -249,7 +249,7 @@
 					<p><a class="button" href="https://github.com/erickutcher/monitoroff/releases/download/v1.0.0.2/Monitor_Off.zip">Download Monitor Off</a></p>
 					<p>Version 1.0.0.2<br />Released on 8/19/2020</p>
 					<p><a href="https://github.com/erickutcher/monitoroff">View project on GitHub</a></p>
-					<p><a id="monitoroff_a" onclick="show_hide( this, 'monitoroff' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
+					<p><a href="javascript:void(0);" id="monitoroff_a" onclick="show_hide( this, 'monitoroff' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
 				</div>
 				<div class="screenshot">
 					<p><img class="screenshot" alt="Monitor Off" src="images/monitor_off.png"></p>
@@ -272,7 +272,7 @@
 					<p><a class="button" href="https://github.com/erickutcher/googleauthenticator/releases/download/v1.0.0.1/Google_Authenticator.zip">Download Google Authenticator</a></p>
 					<p>Version 1.0.0.1<br />Released on 9/3/2019</p>
 					<p><a href="https://github.com/erickutcher/googleauthenticator">View project on GitHub</a></p>
-					<p><a id="googleauthenticator_a" onclick="show_hide( this, 'googleauthenticator' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
+					<p><a href="javascript:void(0);" id="googleauthenticator_a" onclick="show_hide( this, 'googleauthenticator' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
 				</div>
 				<div class="screenshot">
 					<p><img class="screenshot" alt="Google Authenticator" src="images/google_authenticator.png"></p>
@@ -297,7 +297,7 @@
 					<p><a class="button" href="https://github.com/erickutcher/googlesearchresultsfilter/releases/download/v1.0.0.2/Google_Search_Results_Filter.xpi">Install Google Search Results Filter</a></p>
 					<p>Version 1.0.0.2<br />Released on 10/11/2018</p>
 					<p><a href="https://github.com/erickutcher/googlesearchresultsfilter">View project on GitHub</a></p>
-					<p><a id="googlesearchresultsfilter_a" onclick="show_hide( this, 'googlesearchresultsfilter' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
+					<p><a href="javascript:void(0);" id="googlesearchresultsfilter_a" onclick="show_hide( this, 'googlesearchresultsfilter' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
 				</div>
 				<div class="screenshot">
 					<p><img class="screenshot" alt="Google Search Results Filter" src="images/google_search_results_filter.png"></p>
