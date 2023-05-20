@@ -23,48 +23,6 @@
 
 			gtag('config', 'G-G568E8KMWD');
 		</script>
-		<script>
-		function show_hide( el, id )
-		{
-			if ( el != null )
-			{
-				var el2 = document.getElementById( id );
-				if ( el2 != null )
-				{
-					if ( el2.style.display === "none" )
-					{
-						el.innerHTML = "Less Info &#x25B4;";
-						el2.style.display = "block";
-					}
-					else
-					{
-						el.innerHTML = "More Info &#x25BE;";
-						el2.style.display = "none";
-					}
-				}
-			}
-		}
-
-		function jump()
-		{
-			if ( window.location.hash )
-			{
-				var anchor = window.location.hash.replace( "#", "" ).replace( /_/g, "" ).toLowerCase();
-
-				show_hide( document.getElementById( anchor + "_a" ), anchor );
-			}
-		}
-
-		window.addEventListener( "hashchange", function( e )
-		{
-			jump();
-		} );
-
-		document.addEventListener( "DOMContentLoaded", function( e )
-		{
-			jump();
-		} );
-		</script>
 	</head>
 	<body>
 		<header>
@@ -76,7 +34,7 @@
 			<p><a href="https://github.com/erickutcher?tab=repositories">View projects on GitHub</a>
 		</header>
 		<section>
-			<a id="HTTP_Downloader"></a>
+			<a name="HTTP_Downloader"></a>
 			<h2>HTTP Downloader</h2>
 
 			<p>HTTP Downloader is a download manager for the HTTP(S), FTP(S), and SFTP protocols. Maximize your download throughput by utilizing high performance input/output completion ports (IOCP). HTTP Downloader can open thousands of connections at a time and consumes very little system resources.</p>
@@ -100,8 +58,7 @@
 					<p><img class="screenshot" alt="HTTP Downloader" width="640" height="480" src="images/http_downloader.png"></p>
 				</div>
 			</div>
-			<p><a href="javascript:void(0);" id="httpdownloader_a" onclick="show_hide( this, 'httpdownloader' );" style="cursor: pointer;">Less Info &#x25B4;</a></p>
-			<div id="httpdownloader" style="display: block;">
+			<div>
 				<p>HTTP Downloader is a high-performance, multi-part download manager. You can Start, Pause, Stop, and Queue up to 100 downloads at a time. Each download can be split into 100 parts. That's 10,000 connections!</p>
 
 				<p>Drag and drop links into the program's main window or, select <b>File</b> > <b>Add URL(s)...</b> to bring up the <b>Add URL(s)</b> window. From here you can select the download location to save the files. The <b>Advanced</b> checkbox allows you to configure the <b>Download directory</b>, number of parts to split each download, the <b>SSL / TSL version</b> to use for HTTPS connections, authentication information (basic or digest), and any necessary cookies, headers, and POST data. You can also configure a proxy to download the added URL(s). Clicking the <b>Download</b> button will begin the download(s). If you'd like to add the downloads without starting them, you can click the <b>Add</b> button instead. The advanced configuration settings in the Add URL(s) window will override the <b>Site Manager</b> settings and the default settings in the <b>Options</b>. Multi-host/mirrored downloads can be initiated by grouping URL(s) with curly brackets: <b>{</b> and <b>}</b> The first URL in the group is what will drive the download and be used to determine the size of the file and how to distribute the download parts among the other URL(s). The curly brackets need to be on their own lines.<br />Example:<br /><span style="display: block; padding-left: 30px;">{<br />http://www.example.com/index.html<br />http://www.example.net/index.html<br />http://www.example.org/index.html<br />http://www.example.edu/index.html<br />}</span><br />You can override the name of the file by placing the name you want in square brackets <b>[</b> and <b>]</b> before the URL or, if it's a group, before the first curly bracket.<br />Example:<br /><span style="display: block; padding-left: 30px;">[test.html]http://www.example.com/index.html</span></p>
@@ -133,7 +90,7 @@
 
 			<br />
 
-			<a id="VZ_Enhanced_56K"></a>
+			<a name="VZ_Enhanced_56K"></a>
 			<h2>VZ Enhanced 56K</h2>
 
 			<p>VZ Enhanced 56K is a caller ID notifier that can block phone calls through the use of a 56K modem. It can block incoming calls based on individual phone numbers, ranges of phone numbers, and even caller ID names.</p>
@@ -150,8 +107,7 @@
 					<p><img class="screenshot" alt="VZ Enhanced" width="520" height="358" src="images/vz_enhanced_56k.png"></p>
 				</div>
 			</div>
-			<p><a href="javascript:void(0);" id="vzenhanced56k_a" onclick="show_hide( this, 'vzenhanced56k' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
-			<div id="vzenhanced56k" style="display: none;">
+			<div>
 				<p>Incoming calls will appear in the <b>Call Log</b> and will be displayed in a specific color depending on any action that was taken against them. Normal calls will appear with black text, and ignored calls will appear with red text.</p>
 
 				<p>When you have an incoming call, you can right click the entry in the <b>Call Log</b> and choose to ignore the incoming call. If you ignore the call, then you will be disconnected from the caller and your phone will stop ringing.</p>
@@ -175,7 +131,7 @@
 
 			<br />
 
-			<a id="HTTP_Proxy"></a>
+			<a name="HTTP_Proxy"></a>
 			<h2>HTTP Proxy</h2>
 
 			<p>HTTP Proxy is an HTTP(S) proxy that can relay HTTP(S) traffic. See all the traffic that goes through your web browsers or any other HTTP(S) based program. Uses high performance input/output completion ports (IOCP) to handle multiple connections.</p>
@@ -190,8 +146,7 @@
 					<p><img class="screenshot" alt="HTTP Proxy" width="505" height="392" src="images/http_proxy.png"></p>
 				</div>
 			</div>
-			<p><a href="javascript:void(0);" id="httpproxy_a" onclick="show_hide( this, 'httpproxy' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
-			<div id="httpproxy" style="display: none;">
+			<div>
 				<p>HTTP Proxy is a command-line executable.</p>
 
 				<p>The command-line prompts should be fairly easy to follow. If you saved a configuration file, you can load it to bypass all the configuration settings. Otherwise, you can save a configuration file after setting your preferred settings.</p>
@@ -211,7 +166,7 @@
 
 			<br />
 
-			<a id="MD5_Bruteforcer"></a>
+			<a name="MD5_Bruteforcer"></a>
 			<h2>MD5 Bruteforcer</h2>
 
 			<p>MD5 Bruteforcer is a CUDA based MD5 bruteforcer. Brute force millions of MD5 hash values per second with optimized MD5 algorithms.</p>
@@ -226,8 +181,7 @@
 					<p><img class="screenshot" alt="MD5 Bruteforcer" width="505" height="392" src="images/md5_bruteforcer.png"></p>
 				</div>
 			</div>
-			<p><a href="javascript:void(0);" id="md5bruteforcer_a" onclick="show_hide( this, 'md5bruteforcer' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
-			<div id="md5bruteforcer" style="display: none;">
+			<div>
 				<p>MD5 Bruteforcer is a command-line executable and requires a CUDA based graphics card with a Streaming Multiprocessor version of 13 (<b>sm_13</b>).</p>
 
 				<p>The command-line prompts should be fairly easy to follow. Supply the program with an MD5 hash value, the presumed length of the hash's input, a character set to use when generating inputs, whether or not to randomize the character set, and GPU temperature constraints.</p>
@@ -235,7 +189,7 @@
 
 			<br />
 
-			<a id="Monitor_Off"></a>
+			<a name="Monitor_Off"></a>
 			<h2>Monitor Off</h2>
 
 			<p>Monitor Off will turn off the computer's monitor. A simple system tray program that lets you turn the monitor off with a mouse click or keyboard shortcut.</p>
@@ -250,14 +204,13 @@
 					<p><img class="screenshot" alt="Monitor Off" width="443" height="48" src="images/monitor_off.png"></p>
 				</div>
 			</div>
-			<p><a href="javascript:void(0);" id="monitoroff_a" onclick="show_hide( this, 'monitoroff' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
-			<div id="monitoroff" style="display: none;">
+			<div>
 				<p>Monitor Off resides in the System Tray and you can turn the monitor off by <b>middle clicking</b> (pressing the mouse wheel) its icon, or by pressing <b>Ctrl</b> + <b>Shift</b> + <b>F4</b>.</p>
 			</div>
 
 			<br />
 
-			<a id="Google_Authenticator"></a>
+			<a name="Google_Authenticator"></a>
 			<h2>Google Authenticator</h2>
 
 			<p>Google Authenticator generates one-time passwords for Google accounts.</p>
@@ -272,8 +225,7 @@
 					<p><img class="screenshot" alt="Google Authenticator" width="470" height="343" src="images/google_authenticator.png"></p>
 				</div>
 			</div>
-			<p><a href="javascript:void(0);" id="googleauthenticator_a" onclick="show_hide( this, 'googleauthenticator' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
-			<div id="googleauthenticator" style="display: none;">
+			<div>
 				<p>Google Authenticator stores its username and key list in a 256-bit AES encrypted file. A key file will be generated and used to encrypt and decrypt the list file. Do not lose it! You will need <b>2-Step Verification</b> enabled on your Google account and the base32 key that they generate for you to use with their Google Authenticator app.</p>
 
 				<p><b>Add</b>, <b>edit</b>, and <b>remove</b> items from the list using the keyboard commands listed in the program. <b>Copy</b> the one-time password using <b>Ctrl</b> + <b>C</b>. You can scroll the list using the up and down arrow keys. If you'd like to load a list and its key file directly from the command-line, then include their paths after the executable name: Google_Authenticator.exe list.db list.key</p>
@@ -281,7 +233,7 @@
 
 			<br />
 
-			<a id="Google_Search_Results_Filter"></a>
+			<a name="Google_Search_Results_Filter"></a>
 			<h2>Google Search Results Filter</h2>
 
 			<p>Filter out domains that appear in the Google Search results. This is a WebExtension for the Firefox web browser.</p>
@@ -296,14 +248,13 @@
 					<p><img class="screenshot" alt="Google Search Results Filter" width="600" height="233" src="images/google_search_results_filter.png"></p>
 				</div>
 			</div>
-			<p><a href="javascript:void(0);" id="googlesearchresultsfilter_a" onclick="show_hide( this, 'googlesearchresultsfilter' );" style="cursor: pointer;">More Info &#x25BE;</a></p>
-			<div id="googlesearchresultsfilter" style="display: none;">
+			<div>
 				<p>Google Search Results Filter will display a <b>Hide</b> or <b>Show</b> link next to the domain name of a search result. The domain name of a filtered search results will appear red. If any of the search results get filtered, then a <b>Show Filtered Results</b> link will appear at the bottom of the page. A full list of active filters can be found in the extension's options.</p>
 			</div>
 
 			<br />
 
-			<a id="More_Projects"></a>
+			<a name="More_Projects"></a>
 			<h2>More Projects</h2>
 
 			<p><a href="https://thumbcacheviewer.github.io/">Thumbcache Viewer</a> - Extract thumbnail images from the thumbcache_*.db and iconcache_*.db database files found on Windows Vista, Windows 7, Windows 8, Windows 8.1, and Windows 10.</p>
