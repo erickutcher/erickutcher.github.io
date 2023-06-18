@@ -223,7 +223,7 @@ footer
 	.sidebar
 	{
 		max-height: 240px;
-		min-width: initial;
+		max-width: initial;
 	}
 }
 
