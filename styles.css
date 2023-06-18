@@ -213,6 +213,11 @@ footer
 		border-top: 1px solid #AAAAAA;
 		border-bottom: 1px solid #AAAAAA;
 	}
+	
+	.sidebar
+	{
+		max-height: 240px;
+	}
 }
 
 @media screen and (max-height: 555px) and (min-width: 1280px)
