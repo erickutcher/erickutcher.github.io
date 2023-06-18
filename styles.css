@@ -191,6 +191,11 @@ footer
 	width: 220px;
 }
 
+.sidebar
+{
+	max-width: 220px;
+}
+
 @media screen and (max-width: 800px)
 {
 	header, footer
@@ -217,6 +222,7 @@ footer
 	.sidebar
 	{
 		max-height: 240px;
+		min-width: initial;
 	}
 }
 
