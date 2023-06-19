@@ -269,19 +269,19 @@ li
 		padding: 0px;
 		border: none;
 	}
-	
+
 	.panel_1 > div > ul
 	{
 		list-style: none;
 		padding: 0;
 	}
-	
+
 	.panel_2
 	{
 		max-width: initial;
 		width: initial;
 	}
-	
+
 	.panel_3
 	{
 		display: none;
