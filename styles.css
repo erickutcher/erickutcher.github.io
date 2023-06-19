@@ -164,8 +164,8 @@ li
 
 .panel_1
 {
-	min-width: 260px;
-	width: 260px;
+	min-width: 220px;
+	width: 220px;
 	padding: 30px;
 	border-right: 1px solid #DDDDDD;
 }
@@ -191,8 +191,8 @@ li
 
 .panel_3
 {
-	min-width: 260px;
-	width: 260px;
+	min-width: 220px;
+	width: 220px;
 	padding: 30px;
 	border-left: 1px solid #DDDDDD;
 }
