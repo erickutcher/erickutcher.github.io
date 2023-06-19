@@ -2,7 +2,7 @@ body
 {
 	margin: 0px;
 	background-color: #FAFAFA;
-	font-family: Tahoma, Arial;
+	font-family: "Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
 	font-size: 10pt;
 	color: #222222;
 	line-height: 22px;
@@ -30,10 +30,9 @@ h3
 
 h2, h3
 {
-	margin: 10px 0px 10px 0px;
+	margin: 0px 0px 10px 0px;
 	padding-bottom: 5px;	
 	border-bottom: 1px solid #DDDDDD;
-	font-family: Verdana, Tahoma, Arial;
 	font-weight: 600;
 	color: #555555;
 	display: block;
@@ -53,9 +52,8 @@ a:hover
 
 a.header
 {
-	font-family: Verdana, Tahoma, Arial;
 	font-size: 24px;
-	font-weight: 500;
+	font-weight: 600;
 	color: #555555;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -158,79 +156,123 @@ li
 	margin: 0px;
 }
 
-header
+.container
+{
+	display: flex;
+	flex-direction: row;
+}
+
+.panel_1
+{
+	min-width: 260px;
+	width: 260px;
+	padding: 30px;
+	border-right: 1px solid #DDDDDD;
+}
+
+.panel_1 > div
 {
 	position: fixed;
-	left: 30px;
-	top: 30px;
-	min-width: 220px;
-	padding-right: 30px;
-	border-image: linear-gradient( to bottom, rgb( 170, 170, 170 ), rgba( 0, 0, 0, 0 ) ) 1 100%;
-	-webkit-border-image: -webkit-gradient( linear, 0 0, 0 100%, from( rgb( 170, 170, 170 ) ), to( rgba( 0, 0, 0, 0 ) ) ) 1 100%;
-	-webkit-border-image: -webkit-linear-gradient( rgb( 170, 170, 170 ), rgba( 0, 0, 0, 0 ) ) 1 100%;
-	-moz-border-image: -moz-linear-gradient( rgb( 170, 170, 170 ), rgba( 0, 0, 0, 0 ) ) 1 100%;    
-	-o-border-image: -o-linear-gradient( rgb( 170, 170, 170 ), rgba( 0, 0, 0, 0 ) ) 1 100%;
-	border-right: 1px solid;
-	color: #232323;
-}
-
-section
-{
-	position: relative;
-	left: 290px;
-	width: calc(100% - 350px);
-	max-width: 1100px;
-	margin: 30px;
-}
-
-footer
-{
-	position: fixed;
-	left: 30px;
-	bottom: 0px;
-	width: 220px;
-}
-
-.sidebar
-{
-	max-width: 220px;
+	top: 0;
+	bottom: 0;
+	padding-top: 30px;
 	overflow: hidden;
 }
 
-@media screen and (max-width: 800px)
+.panel_1 > div > ul
 {
-	header, footer
-	{
-		position: static;
-		margin-left: 30px;
-	}
-
-	header
-	{
-		margin-top: 30px;
-		border: none;
-	}
-
-	section
-	{
-		left: 0px;
-		width: auto;
-		max-width: 100%;
-		border-top: 1px solid #AAAAAA;
-		border-bottom: 1px solid #AAAAAA;
-	}
-	
-	.sidebar
-	{
-		max-height: 240px;
-		max-width: initial;
-	}
+	margin-top: 0px;
 }
 
-@media screen and (max-height: 555px) and (min-width: 1280px)
+.panel_2
 {
-	footer
+	max-width: 1100px;
+	width: calc(100% - 640px);
+	padding: 30px;
+	overflow: hidden;
+}
+
+.panel_3
+{
+	min-width: 260px;
+	width: 260px;
+	padding: 30px;
+	border-left: 1px solid #DDDDDD;
+}
+
+.scroll-to-top
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	user-select: none;
+	color: #fff;
+	position: fixed;
+	bottom: 10px;
+	right: 25px;
+	font-size: 18pt;
+	padding: 20px;
+	border-radius: 4px;
+	width: 20px;
+	height: 20px;
+	background-color: #000;
+	opacity: .4 !important;
+	transition: all .2s ease;
+}
+
+.scroll-to-top:hover
+{
+	cursor: pointer;
+	opacity: .8 !important;
+}
+
+.cheers
+{
+	padding-top: 5px;
+	border-top: 1px solid #DDDDDD;
+	text-align: center;
+	font-size: 16px;
+}
+
+@media screen and (max-width: 1000px)
+{
+	.container
+	{
+		flex-direction: column;
+	}
+
+	.panel_1
+	{
+		max-width: initial;
+		width: 100%;
+		padding: 30px 0px 0px 0px;
+	}
+
+	.panel_1 > div
+	{
+		position: initial;
+		text-align: center;
+		width: 100%;
+		padding: 0px;
+		border: none;
+	}
+	
+	.panel_1 > div > ul
+	{
+		list-style: none;
+		padding: 0;
+	}
+	
+	.panel_2
+	{
+		max-width: initial;
+		width: initial;
+	}
+	
+	.panel_3
 	{
 		display: none;
+		width: calc(100% - 60px);
 	}
 }
