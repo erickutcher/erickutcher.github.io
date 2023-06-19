@@ -206,6 +206,11 @@ li
 	overflow: hidden;
 }
 
+.panel_3 > div > ul
+{
+	margin-top: 0px;
+}
+
 .scroll-to-top
 {
 	display: flex;
