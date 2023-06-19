@@ -179,11 +179,6 @@ li
 	overflow: hidden;
 }
 
-.panel_1 > div > ul
-{
-	margin-top: 0px;
-}
-
 .panel_2
 {
 	max-width: 1100px;
@@ -198,6 +193,15 @@ li
 	width: 260px;
 	padding: 30px;
 	border-left: 1px solid #DDDDDD;
+}
+
+.panel_3 > div
+{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	padding-top: 30px;
+	overflow: hidden;
 }
 
 .scroll-to-top
