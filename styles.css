@@ -193,17 +193,26 @@ li
 {
 	min-width: 220px;
 	width: 220px;
-	padding: 30px;
+	height: 100%;
+	padding: 0px 30px 30px 30px;
 	border-left: 1px solid #DDDDDD;
 }
 
-.panel_3 > div
+.panel_3 > div:first-child
 {
 	position: fixed;
-	top: 0;
-	bottom: 0;
+	background: #FAFAFA;
 	padding-top: 30px;
-	overflow: hidden;
+	width: 220px;
+	z-index: 10;
+}
+
+.panel_3 > div:last-child
+{
+	position: relative;
+	top: 270px;
+	bottom: 0;
+	height: calc(100% - 270px);
 }
 
 .panel_3 > div > ul
