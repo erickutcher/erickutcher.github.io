@@ -165,21 +165,49 @@ li
 	flex-direction: row;
 }
 
-.panel_1
+.panel_1,
+.panel_3
 {
 	min-width: 220px;
 	width: 220px;
-	padding: 30px;
+	padding: 0px 30px 30px 30px;
+}
+
+.panel_1
+{
 	border-right: 1px solid #DDDDDD;
 }
 
-.panel_1 > div
+.panel_3
+{
+	border-left: 1px solid #DDDDDD;
+}
+
+.panel_1 > div:first-child,
+.panel_3 > div:first-child
 {
 	position: fixed;
-	top: 0;
-	bottom: 0;
+	background: #FAFAFA;
 	padding-top: 30px;
-	overflow: hidden;
+	width: 220px;
+	z-index: 10;
+}
+
+.panel_1 > div:last-child,
+.panel_3 > div:last-child
+{
+	position: relative;
+	top: 270px;
+	bottom: 0;
+	height: calc(100% - 270px);
+}
+
+.panel_1 > div:last-child > p:last-child,
+.panel_3 > div:last-child > p:last-child
+{
+	position: -webkit-sticky;
+	position: sticky;
+	top: 270px;
 }
 
 .panel_2
@@ -190,31 +218,6 @@ li
 	background: #FFFFFF;
 	overflow: hidden;
 	z-index: 100;
-}
-
-.panel_3
-{
-	min-width: 220px;
-	width: 220px;
-	padding: 0px 30px 30px 30px;
-	border-left: 1px solid #DDDDDD;
-}
-
-.panel_3 > div:first-child
-{
-	position: fixed;
-	background: #FAFAFA;
-	padding-top: 30px;
-	width: 220px;
-	z-index: 10;
-}
-
-.panel_3 > div:last-child
-{
-	position: relative;
-	top: 270px;
-	bottom: 0;
-	height: calc(100% - 270px);
 }
 
 .panel_3 > div > ul
@@ -233,7 +236,7 @@ li
 	position: fixed;
 	bottom: 10px;
 	right: 25px;
-	font-size: 18pt;
+	font-size: 24pt;
 	font-weight: 600;
 	padding: 20px;
 	border-radius: 4px;
@@ -267,25 +270,25 @@ li
 
 	.panel_1
 	{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
 		max-width: initial;
 		width: 100%;
-		padding: 30px 0px 0px 0px;
-		border: none;
+		padding: 0px;
+		border-right: none;
+		border-bottom: 1px solid #DDDDDD;
 	}
 
-	.panel_1 > div
+	.panel_1 > div:first-child
 	{
 		position: initial;
 		text-align: center;
-		width: 100%;
-		padding: 0px;
-		border: none;
 	}
-
-	.panel_1 > div > ul
+	
+	.panel_1 > div:last-child
 	{
-		list-style: none;
-		padding: 0;
+		display: none;
 	}
 
 	.panel_2
@@ -297,6 +300,5 @@ li
 	.panel_3
 	{
 		display: none;
-		width: calc(100% - 60px);
 	}
 }
